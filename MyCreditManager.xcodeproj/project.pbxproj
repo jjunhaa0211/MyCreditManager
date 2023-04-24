@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E50F0EF29F60BC20015FAE1 /* Errors+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50F0EE29F60BC20015FAE1 /* Errors+extension.swift */; };
+		0E65734B29F648B700D76A9C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E65734A29F648B700D76A9C /* Errors.swift */; };
+		0E65734D29F648D900D76A9C /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E65734C29F648D900D76A9C /* Alarm.swift */; };
+		0E65734F29F648F800D76A9C /* Grades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E65734E29F648F800D76A9C /* Grades.swift */; };
 		0E978D4429F5F1FC0087F857 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E978D4329F5F1FC0087F857 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 
 /* Begin PBXFileReference section */
 		0E50F0EE29F60BC20015FAE1 /* Errors+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Errors+extension.swift"; sourceTree = "<group>"; };
+		0E65734A29F648B700D76A9C /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		0E65734C29F648D900D76A9C /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		0E65734E29F648F800D76A9C /* Grades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grades.swift; sourceTree = "<group>"; };
 		0E978D4029F5F1FC0087F857 /* MyCreditManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyCreditManager; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E978D4329F5F1FC0087F857 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +46,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E65734829F648A000D76A9C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0E50F0EE29F60BC20015FAE1 /* Errors+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0E65734929F648AD00D76A9C /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				0E65734A29F648B700D76A9C /* Errors.swift */,
+				0E65734C29F648D900D76A9C /* Alarm.swift */,
+				0E65734E29F648F800D76A9C /* Grades.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		0E978D3729F5F1FC0087F857 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +83,9 @@
 		0E978D4229F5F1FC0087F857 /* MyCreditManager */ = {
 			isa = PBXGroup;
 			children = (
+				0E65734929F648AD00D76A9C /* Enum */,
 				0E978D4329F5F1FC0087F857 /* main.swift */,
-				0E50F0EE29F60BC20015FAE1 /* Errors+extension.swift */,
+				0E65734829F648A000D76A9C /* Extension */,
 			);
 			path = MyCreditManager;
 			sourceTree = "<group>";
@@ -123,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E65734F29F648F800D76A9C /* Grades.swift in Sources */,
 				0E50F0EF29F60BC20015FAE1 /* Errors+extension.swift in Sources */,
+				0E65734B29F648B700D76A9C /* Errors.swift in Sources */,
 				0E978D4429F5F1FC0087F857 /* main.swift in Sources */,
+				0E65734D29F648D900D76A9C /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
