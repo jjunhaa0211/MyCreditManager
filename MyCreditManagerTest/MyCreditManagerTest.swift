@@ -10,21 +10,12 @@ import XCTest
 
 final class MyCreditManagerTest: XCTestCase {
     
-//    var students: [String]!
-//    var studentGrades: [String: [String: String]]!
-    
     override class func setUp() {
         super.setUp()
         
         students = []
         studentGrades = [:]
     }
-
-//    override class func tearDown() {
-//        students = nil
-//        studentGrades = nil
-//        super.tearDown()
-//    }
     
     func testAddStudent() {
         addStudent("Mickey")
@@ -41,6 +32,24 @@ final class MyCreditManagerTest: XCTestCase {
         XCTAssertEqual(students.count, 0, "학생 시험 삭제 실패, 학생을 찾을 수 없지만 목록에서 제거됨 🤙")
     }
     
+    func testAlarm() {
+        print("-------------------------Alarm-------------------------")
+        let studentsName1 = Alarm.addStudentSuccess("junha1")
+        print("\(studentsName1.message)")
+        let studentsName2 = Alarm.removeStudentSuccess("junha2")
+        print("\(studentsName2.message)")
+        print("-------------------------Alarm-------------------------")
+    }
+    
+    func testErrors() {
+        print("-------------------------ERROR-------------------------")
+        print(Errors.InvalidConditionInput)
+        print(Errors.InvalidInput)
+        print(Errors.AlreadyExist)
+        print(Errors.studentNotFound)
+        print(Errors.subjectNotFound)
+        print("-------------------------ERROR-------------------------")
+    }
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
