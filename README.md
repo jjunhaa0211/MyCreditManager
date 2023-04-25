@@ -126,7 +126,7 @@ public func excuteGradesMessage(_ status: GradeHandle) -> Void {
 }
 ```
 
-`excuteStudentMessage`의 같은 경우에는 `switch`로 나누어준 이유가 있습니다. 지금은 딱 정해진 기능이 있지만 만약 학생의 주소를 입력하는 코드 등등 이 추가되게 되면 계속 `print`를 찍어야합니다. 하지만 `excuteStudentMessage`를 만들어서 학생 관련 함수를 만들어서 메세지를 출력하는 것을 만들면 코드의 유지보수가 편해지고 기존에 함수는 상속이 불가능하지만 이와 같은 방법으로 상속? 을 할 수 있다고 생각했습니다. `excuteGradesMessage` 역시 위해 설명한 그대로 입니다.
+`excuteStudentMessage`의 같은 경우에는 `switch`로 나누어준 이유가 있습니다. 지금은 딱 정해진 기능이 있지만 만약 학생의 주소를 입력하는 코드 등등 이 추가되게 되면 계속 `print`를 찍어야합니다. 하지만 `excuteStudentMessage`를 만들어서 학생 관련 함수를 만들어서 메세지를 출력하는 것을 만들면 코드의 유지보수가 편해지고 기존에 함수는 상속이 불가능하지만 이와 같은 방법으로 상속? 을 할 수 있다고 생각했습니다. `excuteGradesMessage` 역시 위 설명한 그대로 입니다.
 
 ## StudentHandle + main
 
