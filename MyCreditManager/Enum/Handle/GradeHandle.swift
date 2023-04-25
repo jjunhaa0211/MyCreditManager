@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum GradeHandle {
+public enum GradeHandle {
     case add
     case delete
     case show

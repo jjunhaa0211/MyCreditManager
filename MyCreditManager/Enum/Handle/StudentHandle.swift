@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum StudentHandle {
+public enum StudentHandle {
     case add
     case delete
     

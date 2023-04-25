@@ -7,7 +7,7 @@
 
 import Foundation
 
-func excuteStudentMessage(_ status: StudentHandle) -> Void {
+public func excuteStudentMessage(_ status: StudentHandle) -> Void {
     switch status {
     case .add:
         print("추가할 학생의 이름을 입력해주세요")
@@ -16,7 +16,7 @@ func excuteStudentMessage(_ status: StudentHandle) -> Void {
     }
 }
 
-func excuteGradesMessage(_ status: GradeHandle) -> Void {
+public func excuteGradesMessage(_ status: GradeHandle) -> Void {
     switch status {
     case .add:
         print("성적을 추가할 학생의 이름, 과목 이름, 성적(A+, A, F)을 띄어쓰기로 구분하여 차례로 작성해주세요")

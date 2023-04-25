@@ -7,14 +7,14 @@
 
 import Foundation
 
-var students: [String] = []
-var studentGrades: [String: [String: String]] = [:]
+public var students: [String] = []
+public var studentGrades: [String: [String: String]] = [:]
 
-func isDuplicateName(name: String, in array: [String]) -> Bool {
+public func isDuplicateName(name: String, in array: [String]) -> Bool {
     return array.contains(name)
 }
 
-func addStudent(_ inputName: String) {
+public func addStudent(_ inputName: String) {
     if isDuplicateName(name: inputName, in: students) {
         print("\(inputName)\(Errors.AlreadyExist)")
         return
@@ -25,7 +25,7 @@ func addStudent(_ inputName: String) {
     print(studentsName.message)
 }
 
-func deleteStudent(_ inputName: String) {
+public func deleteStudent(_ inputName: String) {
     if let index = students.firstIndex(of: inputName) {
         students.remove(at: index)
         let studentsName = Alarm.removeStudentSuccess(inputName)
